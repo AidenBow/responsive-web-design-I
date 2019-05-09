@@ -146,11 +146,15 @@ nav a {
 }
 
 @media (max-width: 500px){
-  nav a{
+  nav a {
     width: 100%;
     text-align: center;
     padding: 5px 0px;
     border-bottom: 1px solid black;
+  }
+  nav a:first-child {
+    border-top: 1px solid black;
+    padding-top: 20px;
   }
 }
 
@@ -163,7 +167,13 @@ nav a {
 @media (max-width: 800px){
   .logo {
     align-self: center;
+  }
+}
 
+@media (max-width: 800px){
+  .logo {
+    order: -1;
+    
   }
 }
 
@@ -236,6 +246,13 @@ button {
 
 #middle-img {
 	width: 100%;
+}
+
+@media (max-width: 500px){
+  #middle-img {
+    width: 480px;
+    margin: 0px auto;
+  }
 }
 
 #bottom-middle {
